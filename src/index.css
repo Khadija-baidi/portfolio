@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/custom-utilities.css';
+
+:root {
+  --primary: #ec4899;    /* pink-500 */
+  --secondary: #facc15;  /* yellow-400 */
+}
+
+html {
+  scroll-behavior: smooth;
+  @apply bg-slate-900;
+}
