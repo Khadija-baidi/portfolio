@@ -14,7 +14,7 @@ import {
   FaGitAlt,
   FaReact,
 } from 'react-icons/fa';
-import { SiTailwindcss } from 'react-icons/si'; // هادي مهمة!
+import { SiTailwindcss } from 'react-icons/si'; 
 import emailjs from '@emailjs/browser';
 import Skills from '../skills/skills';
 
