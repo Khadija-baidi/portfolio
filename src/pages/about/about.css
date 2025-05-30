@@ -1,0 +1,15 @@
+.hidden-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add a slight delay to the paragraph animation */
+p.hidden-element {
+  transition-delay: 0.3s;
+} 

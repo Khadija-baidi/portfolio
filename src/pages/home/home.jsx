@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import girl from "../images/girl.png";
+import logo from "../../assets/images/logo.png"
 import EasyFolio from "../images/EasyFolio-bootstrap-website-template.webp";
 import Restaurantly from "../images/Restaurantly.png";
 import QuickStart from "../images/QuickStart.webp";

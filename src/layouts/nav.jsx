@@ -147,9 +147,12 @@ export default function Navbar() {
   return (
     <nav className="w-full flex items-center justify-between px-6 md:px-10 py-4 bg-gradient-to-r from-slate-900 via-purple-900 to-slate-800 text-white shadow-lg fixed top-0 z-50">
       {/* Logo */}
-      <div className="text-2xl font-bold border-2 border-white rounded-full w-12 h-12 flex items-center justify-center bg-white text-purple-800 shadow-md hover:scale-110 transition-transform duration-300 cursor-pointer">
-        KB
-      </div>
+      <img
+  src="../../src/assets/images/logo.png"
+  alt="Logo"
+  className="w-12 h-12 rounded-full object-cover shadow-md hover:scale-110 transition-transform duration-300 cursor-pointer"
+/>
+
 
       {/* Hamburger (Mobile Only) */}
       <div className="md:hidden text-2xl cursor-pointer" onClick={toggleMenu}>

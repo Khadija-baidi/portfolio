@@ -27,13 +27,24 @@
 
 // export default App;
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Nav from './layouts/nav';
 import Home from './pages/home/home';
+import Loading from './components/Loading';
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate initial loading
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+  }, []);
+
   return (
     <>
+      {isLoading && <Loading />}
       <Nav />
       <Home />
     </>
