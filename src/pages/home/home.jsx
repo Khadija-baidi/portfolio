@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import girl from "../images/girl.png";
+import computer from "../images/computer.gif"
 import logo from "../../assets/images/logo.png"
 import EasyFolio from "../images/EasyFolio-bootstrap-website-template.webp";
 import Restaurantly from "../images/Restaurantly.png";
@@ -90,6 +91,15 @@ export default function Home() {
               >
                 <FaGithub />
               </a>
+              <a
+                href="mailto:khadijabaidi2@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-400 transition duration-300"
+                aria-label="Gmail"
+              >
+                <FaEnvelope />
+              </a>
             </div>
 
             {/* CTA Button */}
@@ -117,13 +127,75 @@ export default function Home() {
         id="about"
         className="bg-gradient-to-b from-black via-gray-900 to-black text-gray-200 px-8 py-20"
       >
-        <div className="max-w-5xl mx-auto text-center space-y-8">
-          <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-red-500 to-yellow-400">
-            About Me
-          </h2>
-          <p className="text-lg md:text-xl leading-relaxed text-gray-300 max-w-3xl mx-auto">
-            I'm <span className="text-pink-400 font-semibold">Khadija Baidi</span>, a full stack developer focused on delivering clean, modern, and responsive web applications. I believe in simplicity, performance, and elegant UI/UX.
-          </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-red-500 to-yellow-400 mb-6">
+              About Me
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-yellow-400 mx-auto rounded-full mb-8"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left side - Image and quick info */}
+            <div className="space-y-6">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-yellow-400 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                <img
+                  src={computer}
+                  alt="Profile"
+                  className="relative rounded-lg w-full object-cover shadow-2xl transform transition duration-500 hover:scale-105"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4 text-center">
+                <div className="p-4 rounded-lg bg-gray-800/50 backdrop-blur-sm border border-gray-700">
+                  <h3 className="font-bold text-xl text-pink-400">Status</h3>
+                  <p className="text-gray-300">Student Developer</p>
+                </div>
+                <div className="p-4 rounded-lg bg-gray-800/50 backdrop-blur-sm border border-gray-700">
+                  <h3 className="font-bold text-xl text-yellow-400">Focus</h3>
+                  <p className="text-gray-300">Full Stack</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right side - About text and details */}
+            <div className="space-y-6">
+              <div className="prose prose-invert max-w-none">
+                <p className="text-lg leading-relaxed text-gray-300">
+                  Hello! I'm <span className="text-pink-400 font-semibold">Khadija Baidi</span>, an aspiring Full Stack Developer currently studying web development. I'm passionate about creating elegant solutions and learning new technologies in the world of web development.
+                </p>
+                <p className="text-lg leading-relaxed text-gray-300 mt-4">
+                  As a student developer, I'm dedicated to mastering both front-end and back-end technologies. I focus on writing clean code and creating user-friendly applications while continuously expanding my knowledge and skills.
+                </p>
+              </div>
+
+              {/* Key points */}
+              <div className="space-y-4 mt-6">
+                <div className="flex items-center space-x-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400"></div>
+                  <p className="text-gray-300">Currently Learning Full Stack Development</p>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400"></div>
+                  <p className="text-gray-300">Passionate About Modern Web Technologies</p>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400"></div>
+                  <p className="text-gray-300">Building Projects to Enhance Skills</p>
+                </div>
+              </div>
+
+              {/* CTA Button */}
+              <div className="mt-8">
+                <a
+                  href="#contact"
+                  className="inline-block px-8 py-3 bg-gradient-to-r from-pink-500 to-yellow-400 text-black font-semibold rounded-full shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105 hover:brightness-110"
+                >
+                  Let's Connect →
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -211,7 +283,7 @@ export default function Home() {
                   Basic website template.
                 </p>
                 <a
-                  href="https://khadija-baidi.github.io/QuickStart/"
+                  href="https://elroumaissaa-aalam.github.io/QuickStart/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-yellow-400 text-black font-semibold rounded-full transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-yellow-400 hover:to-pink-500"
@@ -298,7 +370,7 @@ export default function Home() {
               </a>
 
               <a
-                href="mailto:khadijabaidi2001@gmail.com"
+                href="mailto:khadijabaidi2@gmail.com"
                 className="group relative"
               >
                 <div className="absolute -inset-2 bg-gradient-to-r from-pink-500 to-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur"></div>
