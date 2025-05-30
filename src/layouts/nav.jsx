@@ -6,7 +6,7 @@ export default function Navbar() {
 
   const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
-  // Reusable nav links
+
   function navLinks() {
     const links = [
       { href: "#home", label: "HOME", tooltip: "Back to Top" },
@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full flex items-center justify-between px-6 md:px-10 py-4 bg-gradient-to-r from-slate-900 via-purple-900 to-slate-800 text-white shadow-lg fixed top-0 z-50">
-      {/* Logo */}
+      {}
       <img
   src="../../src/assets/images/logo.png"
   alt="Logo"
@@ -39,24 +39,24 @@ export default function Navbar() {
 />
 
 
-      {/* Hamburger (Mobile Only) */}
+      {}
       <div className="md:hidden text-2xl cursor-pointer" onClick={toggleMenu}>
         {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
       </div>
 
-      {/* Desktop Links */}
+      {}
       <ul className="hidden md:flex space-x-8 lg:space-x-10 font-medium text-lg">
         {navLinks()}
       </ul>
 
-      {/* Mobile Menu */}
+      {}
       {isMobileMenuOpen && (
         <ul className="absolute top-20 left-0 w-full bg-slate-900 text-white flex flex-col items-center space-y-6 py-6 md:hidden transition-all duration-300 z-40">
           {navLinks()}
         </ul>
       )}
 
-      {/* Social Icons */}
+      {}
       <div className="hidden md:flex space-x-5 text-xl">
         {socialIcons()}
       </div>
@@ -64,7 +64,6 @@ export default function Navbar() {
   );
 }
 
-// Reusable social icons
 function socialIcons() {
   const socials = [
     {

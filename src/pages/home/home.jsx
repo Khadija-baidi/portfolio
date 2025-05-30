@@ -55,13 +55,13 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section */}
+      {}
       <section
         id="home"
         className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 text-gray-200 flex items-center justify-center px-8 py-16 pt-24"
       >
         <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
-          {/* Text & Intro */}
+          {}
           <div className="md:w-1/2 space-y-8 text-center md:text-left">
             <h1 className="text-6xl font-extrabold tracking-tight text-gradient bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-red-500 to-yellow-400">
               Baidi Khadija
@@ -71,7 +71,7 @@ export default function Home() {
               Full Stack Web Developer crafting sleek, scalable, and performant web applications tailored for an exceptional user experience.
             </p>
 
-            {/* Social Icons */}
+            {}
             <div className="flex justify-center md:justify-start space-x-8 text-pink-400 text-3xl mt-6">
               <a
                 href="https://www.linkedin.com/in/khadija-baidi"
@@ -102,7 +102,7 @@ export default function Home() {
               </a>
             </div>
 
-            {/* CTA Button */}
+            {}
             <button 
               onClick={scrollToProjects}
               className="mt-8 px-8 py-4 bg-gradient-to-r from-pink-500 to-yellow-400 text-black font-semibold rounded-full shadow-lg hover:brightness-110 transition duration-300 transform hover:scale-105 active:scale-95"
@@ -111,7 +111,7 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Image */}
+          {}
           <div className="md:w-1/2 mt-12 md:mt-0">
             <img
               src={girl}
@@ -122,7 +122,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
+      {}
       <section
         id="about"
         className="bg-gradient-to-b from-black via-gray-900 to-black text-gray-200 px-8 py-20"
@@ -136,7 +136,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left side - Image and quick info */}
+            {}
             <div className="space-y-6">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-yellow-400 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
@@ -158,7 +158,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right side - About text and details */}
+            {}
             <div className="space-y-6">
               <div className="prose prose-invert max-w-none">
                 <p className="text-lg leading-relaxed text-gray-300">
@@ -169,7 +169,7 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Key points */}
+              {}
               <div className="space-y-4 mt-6">
                 <div className="flex items-center space-x-3">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400"></div>
@@ -185,7 +185,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* CTA Button */}
+              {}
               <div className="mt-8">
                 <a
                   href="#contact"
@@ -209,7 +209,7 @@ export default function Home() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-            {/* Project 1 */}
+            {}
             <div className="group relative bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
               <div className="relative overflow-hidden">
                 <img
@@ -237,7 +237,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Project 2 */}
+            {}
             <div className="group relative bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
               <div className="relative overflow-hidden">
                 <img
@@ -265,7 +265,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Project 3 */}
+            {}
             <div className="group relative bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
               <div className="relative overflow-hidden">
                 <img
@@ -296,10 +296,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills Section */}
+      {}
       <Skills />
 
-      {/* Contact Section */}
+      {}
       <section
         id="contact"
         className="bg-gradient-to-b from-black via-gray-900 to-black text-gray-200 px-8 py-20"
@@ -312,7 +312,7 @@ export default function Home() {
             Feel free to reach out for collaborations or just a friendly hello 👋
           </p>
 
-          {/* Contact form with EmailJS */}
+          {}
           <form ref={form} onSubmit={sendEmail} className="max-w-md mx-auto space-y-4">
             <input
               type="text"
@@ -353,7 +353,7 @@ export default function Home() {
             </button>
           </form>
 
-          {/* Social Links Section */}
+          {}
           <div className="mt-16 pt-16 border-t border-gray-800">
             <h3 className="text-2xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-400">
               Let's Connect
